@@ -1,9 +1,8 @@
 # .dotfiles
 .dot.
 
-# 1. Clone into ~ <br>
-and then <br>
 ```
+git clone https://github.com/r3kste/.dotfiles
 ln -s /home/h3kste12/.dotfiles/~/.gitconfig /home/h3kste12/.gitconfig
 ln -s /home/h3kste12/.dotfiles/~/.zshrc /home/h3kste12/.zshrc
 ln -s /home/h3kste12/.dotfiles/~/.zsh_history /home/h3kste12/.zsh_history
