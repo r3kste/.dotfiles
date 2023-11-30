@@ -11,5 +11,5 @@ ln -s /home/h3kste12/.dotfiles/~/.bashrc /home/h3kste12/.bashrc
 ln -s /home/h3kste12/.dotfiles/~/.bash_history /home/h3kste12/.bash_history
 ln -s /home/h3kste12/.dotfiles/~/.oh-my-zsh /home/h3kste12/.oh-my-zsh
 ln -s /home/h3kste12/.dotfiles/~/.config/nvim /home/h3kste12/.config/nvim
-ln -s /home/h3kste12/.dotfiles/~/.config/nvim.vscode /home/h3kste12/.config/nvim.vscod
+ln -s /home/h3kste12/.dotfiles/~/.config/nvim.vscode /home/h3kste12/.config/nvim.vscode
 ```
