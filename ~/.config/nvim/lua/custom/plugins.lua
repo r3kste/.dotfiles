@@ -76,7 +76,7 @@ local plugins = {
 					cpp = {
 						'cd "$dir" &&',
 						'g++ "$fileName" -o ".$fileNameWithoutExt" &&',
-						"./.$fileNameWithoutExt",
+						"./.$fileNameWithoutExt.out",
 					},
 					java = {
 						"cd $dir &&",
