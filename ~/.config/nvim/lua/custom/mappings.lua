@@ -11,9 +11,8 @@ local M = {}
 -- Your custom mappings
 M.abc = {
 	n = {
-		["<F5>"] = { ":Format<CR>:w<CR>:RunCode<CR>i", "Run" },
 		["<leader>r"] = { ":Format<CR>:w<CR>:RunCode<CR>i", "Run" },
-		["<leader>i"] = { ":Format<CR>", "Format" },
+		["<leader>i"] = { ":Format<CR>:w<CR>", "Format" },
 	},
 
 	i = {

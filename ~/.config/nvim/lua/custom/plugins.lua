@@ -75,7 +75,7 @@ local plugins = {
 				filetype = {
 					cpp = {
 						'cd "$dir" &&',
-						'g++ "$fileName" -o ".$fileNameWithoutExt.out" &&',
+						'g++ -O2 -Wall "$fileName" -o ".$fileNameWithoutExt.out" &&',
 						"./.$fileNameWithoutExt.out",
 					},
 					java = {
@@ -87,10 +87,6 @@ local plugins = {
 				},
 			})
 		end,
-	},
-	{
-		"mfussenegger/nvim-dap",
-		lazy = false,
 	},
 }
 
