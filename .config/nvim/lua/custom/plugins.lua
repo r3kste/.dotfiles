@@ -49,7 +49,7 @@ local plugins = {
 							return {
 								exe = "astyle",
 								args = {
-									"-p -jfq -xg -xe -xb -xd --style=break",
+									"-p -f -j -xg -xe -xd --style=attach",
 								},
 								stdin = true,
 							}
@@ -74,16 +74,14 @@ local plugins = {
 			require("code_runner").setup({
 				filetype = {
 					cpp = {
-						'cd "$dir" &&',
-						'g++ -O2 -Wall "$fileName" -o ".$fileNameWithoutExt.out" &&',
-						"./.$fileNameWithoutExt.out",
+						'g++ -O2 -Wall "$file" -o "/home/h3kste12/dev/code/target/.out" &&',
+						'"/home/h3kste12/dev/code/target/.out"',
 					},
-					java = {
-						"cd $dir &&",
-						"javac $fileName &&",
-						"java $fileNameWithoutExt",
+					python = { "cd $dir && python $fileName" },
+					rust = {
+						'cd $dir/.. &&',
+						'cargo run --bin $fileNameWithoutExt',
 					},
-					python = {"cd $dir && python $fileName"},
 				},
 			})
 		end,
