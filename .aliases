@@ -1,0 +1,8 @@
+alias ld='eza -lD'
+alias lf='eza -alf --color=always'
+alias lh='eza -dl .* --group-directories-first'
+alias ll='eza -al --group-directories-first'
+alias la='eza -alF --color=always --sort=size'
+alias lt='eza -al --sort=modified'
+
+alias fmt="cd ~/code && astyle \"*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q"
