@@ -3,3 +3,5 @@
 	email = r3kst@proton.me
 [init]
 	defaultBranch = main
+[http]
+	postBuffer = 1048576000

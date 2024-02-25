@@ -5,4 +5,5 @@ alias ll='eza -al --group-directories-first'
 alias la='eza -alF --color=always --sort=size'
 alias lt='eza -al --sort=modified'
 
-alias fmt="cd ~/code && astyle \"*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q"
+alias fmt="astyle \"$HOME/code/*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q && find $HOME/code/ -name \"*.rs\" -exec rustfmt -l {} \;"
+alias idlog="ssh me23b015@10.24.8.242"
