@@ -6,4 +6,4 @@ alias la='eza -alF --color=always --sort=size'
 alias lt='eza -al --sort=modified'
 
 alias fmt="astyle \"$HOME/code/*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q && find $HOME/code/ -name \"*.rs\" -exec rustfmt -l {} \;"
-alias idlog="ssh me23b015@10.24.8.242"
+alias idlog='ssh -t me23b015@10.24.8.242 '\''export PATH=$PATH:$HOME/apps/bin; zsh'\'
