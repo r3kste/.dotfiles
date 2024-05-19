@@ -1,9 +1,5 @@
-alias ld='eza -lD'
-alias lf='eza -alf --color=always'
-alias lh='eza -dl .* --group-directories-first'
-alias ll='eza -al --group-directories-first'
-alias la='eza -alF --color=always --sort=size'
-alias lt='eza -al --sort=modified'
+alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
-alias fmt="astyle \"$HOME/code/*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q && find $HOME/code/ -name \"*.rs\" -exec rustfmt -l {} \;"
+alias fmt="astyle \"$HOME/code/*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q && find $HOME/code/cp/ -name \"*.rs\" -exec rustfmt -l {} \;"
 alias idlog='ssh me23b015@10.24.8.242'

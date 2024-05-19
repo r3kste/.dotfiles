@@ -84,6 +84,11 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	eza
+	colored-man-pages
+	zoxide
+	python
+	rust
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,8 +118,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
