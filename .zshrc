@@ -1,4 +1,5 @@
-/usr/bin/neofetch
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+ulimit -c 0
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -86,7 +87,6 @@ plugins=(
 	zsh-syntax-highlighting
 	eza
 	colored-man-pages
-	zoxide
 	python
 	rust
 )
