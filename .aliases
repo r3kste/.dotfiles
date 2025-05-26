@@ -1,4 +1,4 @@
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-alias fmt="astyle \"$HOME/code/*.cpp\" -p -f -j -xg -xe --style=attach --recursive -n -Q && find $HOME/code/cp/ -name \"*.rs\" -exec rustfmt -l {} \;"
+alias fmt="find $HOME/code/cp/ -name \"*.cpp\" -o -name \"*.h\" | xargs clang-format -i"
 alias idlog='ssh me23b015@10.24.8.242'

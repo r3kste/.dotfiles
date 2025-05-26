@@ -5,3 +5,5 @@
 	defaultBranch = main
 [http]
 	postBuffer = 1048576000
+[core]
+	editor = code --wait

@@ -1,4 +1,5 @@
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+export AR=gcc-ar
 ulimit -c 0
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
